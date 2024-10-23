@@ -118,7 +118,7 @@ function makelavalthrow(pos, lavaclr) {
 	
 	p.CFrame = CFrame.new(pos, zero) * CFrame.Angles(0, blankrandom() * 2 * pi, blankrandom()) * CFrame.new(Vector3.new(0, 10, 0), zero)
 	p.Velocity = (Vector3.normalize((p.Position - pos) + Vector3.new(0, 0.1, 0)) * 250) + (Vector3.new(blankrandom() - 0.5, blankrandom() - 0.5, blankrandom() - 0.5) * (50 + blankrandom() * 50))
-	-- p.RotVelocity = Vector3.new(blankrandom() - 0.5, blankrandom() - 0.5, blankrandom() - 0.5) * 20
+	p.RotVelocity = Vector3.new(blankrandom() - 0.5, blankrandom() - 0.5, blankrandom() - 0.5) * 20
 	p.Parent = game.Workspace.Structure
 }
 
