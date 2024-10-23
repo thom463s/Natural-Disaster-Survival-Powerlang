@@ -82,7 +82,7 @@ function updatetornado(mdl) {
 					}
 
 					mdl.Velocity = (vec*speedpercent*speed*(1+(2*hightpercentage)))+Vector3.new(0,(lift*(speedpercent+hightpercentage)*speed),0)
-					-- mdl.RotVelocity=mdl.RotVelocity+Vector3.new(math.random(-1,1),math.random(-1,1)+.1,math.random(-1,1))
+					mdl.RotVelocity = mdl.RotVelocity + Vector3.new(math.random(-1, 1), math.random(-1, 1) + 0.1, math.random(-1, 1))
 
 					if tornadodparts[mdl] == nil {
 						if h ~= nil {
